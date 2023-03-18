@@ -1,0 +1,35 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'css/ind.css' %}">
+</head>
+<body>
+    <div class="bg-outer">
+        <div class="bg-inner">
+            <div class="inner-top">
+                <img src="/static/img/clogo.jpg" id="logo">
+                <h2 id="web-name">St. Joseph's</h2>
+                <ul>
+                    <a href="accept/2000"><li>Accepted</li></a>
+                    <a href="letter"><li>My Forms</li></a>
+                    <a href="admins"><li>Staff</li></a>
+                </ul>
+                <a href="login"><input type="button" id="login" value="LOG IN"></a>
+            </div>
+            <div class="inner-body">
+                <img src="/static/img/background.jpg" id="body-img">
+                <h1 id="des">Leave Form Validator</h1>
+                <p>This is a Leave form validating site</p>
+            </div>
+            <a href="fill"><button type="button" id="gbutton">Generate a Leave Form</button></a>
+            
+
+        </div>
+    </div>
+</body>
+</html>

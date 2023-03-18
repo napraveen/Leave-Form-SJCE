@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin-top: 0px;
+    margin: 0px;
+}
+
+.bg-outer{
+    background-color: white;
+    height: 567px;
+    width: 1280px;
+    position: absolute;
+}
+
+.inner-top{
+
+    margin-top:40px;
+}
+
+
+.inner-top, ul{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    margin-left: 400px;
+
+}
+
+ul li{
+    margin-right: 70px;
+    
+    color: rgba(0, 0, 0, 0.614);
+}
+
+#login{
+    width: 110px;
+    height: 30px;
+    background-color: rgb(70, 219, 122);
+    border: none;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: -8px;
+
+}
+
+#login:hover{
+    background-color: rgb(125, 229, 161);
+
+}
+
+
+
+li:hover{
+    color: rgb(17, 207, 150);
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: -10px;
+}
+
+#web-name{
+    margin-left: 10px;
+    margin-top: -10px;
+    
+}
+
+#body-img{
+    margin-left: 80px;
+    margin-top: 30px;
+    height: 360px;
+    width: 360px;
+    display: flex;
+    border-radius: 50%;
+}
+
+p{
+    margin-left: 730px;
+    margin-top: 30px;
+}
+
+
+
+a{
+    
+    color: rgba(0, 0, 0, 0.614);
+    text-decoration: none;
+}
+
+#des{
+    margin-top: -300px;
+    margin-left: 700px;
+}
+
+
+#gbutton{
+    color: rgb(0, 0, 0);
+ height: 60px;
+ width: 180px;
+ background-color: rgb(138, 235, 138);
+ margin-left: 750px;
+ margin-top: 70px;
+ border: none;
+ border-radius: 30px;
+ cursor: pointer;
+}
+#gbutton:hover{
+    
+ background-color: rgb(96, 224, 96);
+}

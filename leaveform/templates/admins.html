@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .texts{
+            position: relative;
+
+        }
+        h2{
+                margin-left: 450px;
+                padding-top: 310px;
+            }
+        img{
+            height: 1119px;
+            width: 777px;
+            position: fixed;
+            margin-left:80px; 
+            position:absolute;
+            
+        }
+        h3{
+            margin-left: 450px;
+            margin-top: -11px;
+        }
+        .course{
+            margin-left: 650px;
+            margin-top: -98px;
+        }
+        h4{
+            margin-left: 450px;
+            font-size: larger;
+            margin-top: 68px;
+        }
+        .taken{
+            margin-left: 540px;
+            font-size: larger;
+            margin-top: 68px;
+        }
+        .ll{
+            margin-left: 450px;
+            margin-top: -18px;
+            font-size: large;
+        }
+        .med{
+            margin-left: 450px;
+            margin-top: -18px;
+            font-size: large;
+        }
+        .abs{
+            margin-left: 450px;
+            margin-top: -18px;
+            font-size: large;
+        }
+        .pl{
+            margin-left: 680px;
+            margin-top: -82px;
+            font-size: large;
+        }
+        .rl{
+            margin-left: 720px;
+            margin-top: -18px;
+            font-size: large;
+        }
+        .td{
+            margin-left: 540px;
+            margin-top: 33px;
+            font-size: large;
+        }
+        .reason{
+            margin-left: 450px;
+            margin-top: -10px;
+            font-size: large;
+        }
+        .date{
+            margin-left: 420px;
+            margin-top: 25px;
+        }
+        .from{
+            margin-left: 420px;
+            margin-top: -10px;
+        }
+        .to{
+            margin-top: -35px;
+            margin-left:540px;
+        }
+        .end{
+            margin-top: 0px;
+
+        }
+        form{
+            margin-top: -50px;
+            margin-left: 550px;
+            
+        }
+        .acc{
+            margin-left: 400px;
+            margin-top: 450px;
+        }
+        #back{
+            background-color: rgb(41, 183, 140);
+            border: none;
+            height: 30px;
+            width:70px;
+            border-radius: 50px;
+            margin-left: 20px;
+            margin-top:0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    {%if user.is_authenticated %}
+    {%for detail in details%}
+    <img src="/static/img/lform.png">
+    <div class="texts">
+        <h2 >{{detail.name}}</h2>
+        <h3 >{{detail.rno}}</h3>
+        <h3 >{{detail.ug}}</h3>
+        <h3>{{detail.year}}</h3>
+        <h3>{{detail.section}}</h3>
+        <h3 class="course">{{detail.course}}</h3>
+        <h4 class="taken">{{detail.tot}}</h4>
+        <p class="ll">{{detail.leaveletter}}</p>
+        <p class="med">{{detail.medical}}</p>
+        <p class="abs">{{detail.medical}}</p>
+        <p class="pl">{{detail.previlege}}</p>
+        <p class="rl">{{detail.relation}}</p>
+        <p class="td">{{detail.totdays}}</p>
+        <p class="reason">{{detail.reason}}</p>
+        <p class="date">{{detail.date}}</p>
+        <p class="from">{{detail.froms}}</p>
+        <p class="to">{{detail.tos}}</p>
+    </div>
+    <div class="acc"><a href="accept/{{detail.rno}}"><h1>Accept</h1></div></a>
+    <a href="/"><button type="button" id="back">back</button></a>
+    <h1 class="end">---------------------------------------------------------------------------------------------------------</h1>
+    {%endfor%}
+    {%endif%}
+
+    <a href="/"><button type="button" id="back">back</button></a>
+    <h1 class="end">---------------------------------------------------------------------------------------------------------</h1>
+   
+</body>
+
+</html>
+

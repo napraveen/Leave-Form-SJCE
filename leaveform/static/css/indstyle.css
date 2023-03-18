@@ -1,0 +1,22 @@
+body{
+    background-color:white;
+    margin: 0px;
+}
+
+ul{
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: yellow;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    list-style: none;
+    
+}
+
+.ind-body{
+    width: 100%;
+    height: 700px;
+    margin-top: 0px;
+    background-color: orange;
+}

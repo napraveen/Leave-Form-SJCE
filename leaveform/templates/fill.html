@@ -1,0 +1,71 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fill.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="fill">
+        {%csrf_token%}
+
+        <div class="left">
+            <img src="/static/img/clogo.jpg" height="100px" width="100px">
+            <h4 id="topc">St Joseph's College of Engineering Chennai</h4>
+            <p id="dee">Fill the Form to get your Leave Form</p>
+            <p id="num">This Process includes,</p>
+            <li id="one">Attendance-incharge and</li>
+            <li id="two">Hod Validation</li>
+
+        </div>
+        <div class="right">
+        <div class="lgin">
+            <label for="username">User Name</label>
+            <input type="text" id="username" name="username" placeholder="Same as your current username *"><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name"><br>
+            <label for="rno">Roll NO </label>
+            <input type="text" id="rno" name="rno" placeholder="Roll No"><br>
+            <label for="ug">UG/PG </label>
+            <input type="text" id="ug" name="ug" placeholder="UG/PG"><br>
+            <label for="year"> Year/Branch</label>
+            <input type="text" id="year" name="year" placeholder="Year/Branch"><br>
+            <label for="section">Section</Section> </label>
+            <input type="text" id="section" name="section" placeholder="Section"><br>
+            <label for="course">Course </label>
+            <input type="text" id="course" name="course" placeholder="Course"><br>
+            <label for="tot">Total Leave Taken </label>
+            <input type="number" id="tot" name="tot" placeholder="Total Leave(in numbers)"><br>
+            <label for="leaveletter">Leave with Letter </label>
+            <input type="number" id="leaveletter" name="leaveletter" placeholder="Leaveletter(in numbers)"><br>
+            <label for="medical">Medical Letter </label>
+            <input type="number" id="medical" name="medical" placeholder="Medical Letter(in numbers)"><br>
+            <label for="absent">Absent </label>
+            <input type="number" id="absent" name="absent" placeholder="Absent"><br>
+            <label for="previlege">previlege  Letter</label>
+            <input type="number" id="previlege" name="previlege" placeholder="previlege(in numbers)"><br>
+            <label for="relation"> Relation to someone</label>
+            <input type="text" id="relation" name="relation" placeholder="Mention the relationship (for previlege)"><br>
+            <label for="totdays">Total Days </label>
+            <input type="number" id="totdays" name="totdays" placeholder="totdays(in numbers)"><br>
+            <label for="reason">Reason </label>
+            <input type="text" id="reason" name="reason" placeholder="Reason"><br>
+            <label for="date">Date  </label>
+            <input type="number" id="date" name="date" placeholder="Date"><br>
+            <label for="froms">From </label>
+            <input type="number" id="froms" name="froms" placeholder="From"><br>
+            <label for="tos">To </label>
+            <input type="number" id="tos" name="tos" placeholder="To"><br>
+            
+
+            <input type="submit" id="submit" >
+            <a href="/"><button type="button" id="back">back</button></a>
+            
+        </div>
+        </div>
+    </form>
+</body>
+</html>
